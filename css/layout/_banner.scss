@@ -1,0 +1,69 @@
+.banner {
+  height: 100vh;
+  @include mobile {
+    height: 100%;
+  }
+}
+
+.info {
+  @include mobile {
+    text-align: center;
+    padding: 30px 25px;
+  }
+  h5 {
+    font-size: 16px;
+    color: rgb(75, 74, 74);
+    font-weight: 700;
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+  h2 {
+    font-size: 45px;
+    color: rgb(75, 74, 74);
+    font-weight: 800;
+    text-transform: uppercase;
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    color: rgb(75, 74, 74);
+    font-weight: 700;
+    text-transform: uppercase;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+  p {
+    width: 70%;
+    font-size: 16px;
+    color: #7c7a7a;
+    @include mobile {
+      font-size: 11px;
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+.profile-img {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  margin-left: auto;
+  @include mobile {
+    margin: auto;
+    height: 280px;
+    width: 280px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    // background-size: cover;
+    object-fit: fill;
+  }
+}
