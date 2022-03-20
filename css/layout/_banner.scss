@@ -53,9 +53,10 @@
   border-radius: 50%;
   margin-left: auto;
   @include mobile {
-    margin: auto;
-    height: 280px;
-    width: 280px;
+    margin: 30px auto;
+    margin-bottom: 20px !important;
+    height: 255px;
+    width: 255px;
   }
 
   img {

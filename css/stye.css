@@ -122,9 +122,10 @@
 
 @media (max-width: 600px) {
   .profile-img {
-    margin: auto;
-    height: 280px;
-    width: 280px;
+    margin: 30px auto;
+    margin-bottom: 20px !important;
+    height: 255px;
+    width: 255px;
   }
 }
 
@@ -158,9 +159,9 @@
 
 @media (max-width: 600px) {
   .info__button a {
-    height: 45px;
-    width: 165px;
-    line-height: 45px;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
     font-size: 11px;
   }
 }
