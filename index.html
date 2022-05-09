@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/vendors/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/stye.css">
+    <link rel="stylesheet" href="dist/css/stye.css">
 </head>
 <body>
     <!-- Navbar Start -->
         <header class="header">
-            <!-- <div class="container">
+            <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
                        <div class="navbar">
                            <div class="navbar__logo">
                                <a href="">Sowrov</a>
+                           </div>
+                           <div class="navbar__item">
+                               <ul>
+                                   <li><a href="" ><span >Home</span></a></li>
+                                   <li><a href="" ><span >About</span></a></li>
+                                   <li><a href="" ><span >Portfolio</span></a></li>
+                               </ul>
                            </div>
                            <div class="navbar__hamburger">
                                <span></span>
@@ -26,51 +33,31 @@
                        </div>
                     </div>
                 </div>
-            </div> -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-                  <a class="navbar-brand" href="#">Sowrov</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+            </div>
         </header>
     <!-- Navbar Start -->
 
 <!-- Banner Start -->
-   <section class="banner d-flex align-items-center">
-       <div class="container">
-           <div class="row justify-content-center ">
-               <div class="col-md-6 d-flex align-items-center order-lg-1 order-2">
-                   <div class="info">
-                        <h5>Hi!!, I am</h5>
-                        <h2>Md Sowrov Khadem</h2>
-                        <h4>Front-End Web Developer</h4>
-                        <p>Helping design your business and personal website build with your demand.</p>
-                        <div class="info__button">
-                            <a href="">Get CV</a>
+        <section class="hero d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 py-3 d-flex align-items-center justify-content-center">
+                        <div class="hero__info" id="quote">
+                            <h2 >Md Sowrov Khadem</h2>
+                            <h4>Front-End Web Developer</h4>
+                            <p>Helping design your business and personal website build with your demand.</p>
+                            <a class="info__button" href="">Download Cv</a>
                         </div>
-                   </div>
-               </div>
-               <div class="col-md-6 d-flex align-items-center order-lg-2 order-1">
-                   <div class="profile-img">
-                      <img src="./images/antu.jpg" alt="">
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+                    </div>
+                    <div class="col-md-6 py-3 d-flex align-items-center justify-content-center">
+                        <div class="hero__profile">
+                            <img src="./images/me.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__slider"></div>
+        </section>
 <!-- Banner Start -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

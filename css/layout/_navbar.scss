@@ -1,15 +1,59 @@
-.header {
-}
+// .header{
+//   background-color: #2155CD;
+// }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
+
+
+  &__item {
+    ul {
+      margin: 0 !important;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 20px;
+        position: relative;
+        transition: all 0.5s linear;
+        &:last-child {
+          margin-right: 0 !important;
+        }
+
+        &::after {
+          position: absolute;
+          content: '';
+          left: 50%;
+          bottom: -15px;
+          transform: translateX(-50%);
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background-color: $base-color;
+          opacity:0;
+          transition: opacity 1s;
+        }
+
+        &:hover::after {
+          opacity: 1;
+          transition: opacity 1s;
+        }
+        a {
+          text-decoration: none;
+          color: $base-color;
+          font-size: 16px
+        }
+      }
+    }
+  }
   &__hamburger {
     height: 45px;
     width: 50px;
     cursor: pointer;
     transition: all 0.9s linear;
     position: relative;
+    display: none;
     span {
       position: absolute;
       height: 3px;
