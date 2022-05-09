@@ -69,7 +69,8 @@ body {
 .hero {
   height: 100vh;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  overflow-x: hidden; }
   .hero__slider {
     position: absolute;
     top: 0;

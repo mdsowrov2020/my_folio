@@ -4,6 +4,7 @@
     // background-color: #2155CD;
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
    
     &__slider{
         position: absolute;
