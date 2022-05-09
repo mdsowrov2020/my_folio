@@ -4,9 +4,7 @@
     // background-color: #2155CD;
     position: relative;
     z-index: 1;
-    @include mobile {
-        height: 100%;
-      }
+   
     &__slider{
         position: absolute;
         top: 0;
@@ -51,6 +49,10 @@
         // margin: auto;
         position: relative;
         z-index: 1;
+        @include mobile {
+           height: 380;
+           width: 80%;
+          }
         &::after{
             position: absolute;
             content: '';
@@ -68,4 +70,7 @@
             object-fit: cover;
         }
     }
+    @include mobile {
+        height: 100%;
+      }
 }

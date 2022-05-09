@@ -1,12 +1,23 @@
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 @import './abstract/variable';
 @import './abstract/mixins';
 @import './layout/navbar';
 @import './layout/banner';
 @import './components/button';
+
 body {
   overflow: hidden;
+  overflow-x: hidden !important;
   // font-family: 'Poppins', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  @include mobile {
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+   }
 }
+
