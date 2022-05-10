@@ -103,9 +103,12 @@
         width: 80%;
         margin: auto;
         padding: auto 30px; } }
+  @media (max-width: 600px) {
+    .hero__img--mobile {
+      justify-content: center !important; } }
   .hero__profile {
     height: 400px;
-    width: 350px;
+    width: 300px;
     position: relative;
     z-index: 1;
     transition: .5s;
@@ -122,7 +125,7 @@
       content: '';
       top: -20px;
       right: -20px;
-      height: 400px;
+      height: 100%;
       width: 100%;
       border: 5px solid #1b1b1b;
       z-index: -1;
@@ -218,7 +221,7 @@ body {
       display: none; } }
 
 .grow {
-  transform: scale(2);
+  transform: scale(1.8);
   background-color: #fff;
   mix-blend-mode: difference;
   border: none; }
