@@ -9,6 +9,9 @@
 
 
   &__item {
+    @include mobile{
+      display: none;
+    }
     ul {
       margin: 0 !important;
       li {
@@ -17,6 +20,7 @@
         margin: 0 20px;
         position: relative;
         transition: all 0.5s linear;
+        z-index: 1;
         &:last-child {
           margin-right: 0 !important;
         }
@@ -24,20 +28,26 @@
         &::after {
           position: absolute;
           content: '';
-          left: 50%;
-          bottom: -15px;
-          transform: translateX(-50%);
-          height: 8px;
-          width: 8px;
-          border-radius: 50%;
+          // left: 50%;
+          // bottom: -15px;
+          // transform: translateX(-50%);
+          // height: 8px;
+          // width: 8px;
+          // border-radius: 50%;
+          left: 0;
+          top: 50%;
+          height: 2px;
+          width: 100%;
           background-color: $base-color;
-          opacity:0;
-          transition: opacity 1s;
+         transform: scaleX(0) translateY(-50%);
+         transform-origin: left;
+          transition:  .5s;
+          z-index: -1;
         }
 
         &:hover::after {
-          opacity: 1;
-          transition: opacity 1s;
+          transform: scaleX(1);
+          // transition: opacity 1s;
         }
         a {
           text-decoration: none;
@@ -70,6 +80,13 @@
       }
       &:last-child {
         top: 65% !important;
+      }
+    }
+    @include mobile{
+      display: block;
+      width: 35px;
+      span{
+        height: 2px;
       }
     }
   }

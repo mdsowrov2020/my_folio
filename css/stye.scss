@@ -1,11 +1,19 @@
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 @import './abstract/variable';
 @import './abstract/mixins';
+
+@import './layout/navbar';
+@import './layout/banner';
+@import './components/button';
+
+
 body {
   overflow: hidden !important;
   // font-family: 'Poppins', sans-serif;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  // font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -15,9 +23,33 @@ body {
    }
 }
 
-@import './layout/navbar';
-@import './layout/banner';
-@import './components/button';
+.cursor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid $base-color;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  transition:  .3s;
+  z-index: 1000;
+  @include mobile{
+    display: none;
+  }
+}
 
+.grow{
+  transform: scale(2);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  border: none;
+}
 
+.grow__img{
+  transform: scale(3);
+  background-color: rgba($color: #0a0a0a, $alpha: .2);
+  border: none;
+}
 
