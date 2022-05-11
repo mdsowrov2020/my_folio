@@ -15,7 +15,8 @@
       margin: 0 20px;
       position: relative;
       transition: all 0.5s linear;
-      z-index: 1; }
+      z-index: 1;
+      padding: 8px 0; }
       .navbar__item ul li:last-child {
         margin-right: 0 !important; }
       .navbar__item ul li::after {
@@ -123,8 +124,8 @@
     .hero__profile::after {
       position: absolute;
       content: '';
-      top: -20px;
-      right: -20px;
+      top: -15px;
+      right: -15px;
       height: 100%;
       width: 100%;
       border: 5px solid #1b1b1b;
@@ -154,7 +155,7 @@
 .info__button {
   display: inline-block;
   height: 55px;
-  width: 200px;
+  width: 230px;
   line-height: 55px;
   text-align: center;
   color: #1b1b1b;
@@ -167,7 +168,7 @@
   box-shadow: 1px 15px 29px -15px rgba(5, 5, 5, 0.75);
   position: relative;
   z-index: 1;
-  transition: all .5s linear;
+  transition: transform .5s ease;
   transform-origin: .5s;
   overflow: hidden; }
   .info__button::before {
