@@ -8,12 +8,14 @@ let cursor = document.querySelector('.cursor'),
   mouseY = 0;
 const prof__img = document.querySelector('.hero__profile');
 const magnetic__button = document.querySelectorAll('.magnetic');
+const reveals = document.querySelectorAll('.reveal');
 
 gsap.from('.header', { duration: 2.5, y: '-100%', ease: Power2.easeInOut });
 
 gsap.to(slider, { duration: 1, x: '120%', ease: Power2.easeInOut });
-gsap.from(hero__info, { duration: 2, x: '-180%', ease: Power2.easeInOut });
+// gsap.from(hero__info, { duration: 2, x: '-180%', ease: Power2.easeInOut });
 gsap.from(prof__img, { duration: 2, x: '180%', ease: Power2.easeInOut });
+// gsap.to(reveals, { className: 'reveals add_active' }, '+=1');
 
 //Mouse
 gsap.to({}, 0.0016, {

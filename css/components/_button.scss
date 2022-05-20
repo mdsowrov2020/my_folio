@@ -1,16 +1,16 @@
 .info__button{
   display: inline-block;
   // padding: 18px 45px;
-  height: 55px;
-  width: 230px;
-  line-height: 55px;
+  height: 60px;
+  width: 210px;
+  line-height: 60px;
   text-align: center;
   // border-radius: 3px;
   // background-color: #f94001;
   // background-color:  $base-color;
   color: $base-color;
   text-decoration: none;
-  border: 2px solid  $base-color;
+  // border: 2px solid  $base-color;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 1px;
@@ -21,6 +21,9 @@
   transition: transform .5s ease;
   transform-origin: .5s;
   overflow: hidden;
+  // 
+  // backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(19, 19, 19, 0.5), inset -8px -8px 16px 0px rgba(19, 19, 19, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(213, 213, 223, 0.5), inset -8px -8px 16px 0px rgba(213, 213, 223, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(197, 197, 198, 0.5), inset -8px -8px 16px 0px rgba(197, 197, 198, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(2, 2, 2, 0.5), inset -8px -8px 16px 0px rgba(2, 2, 2, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(119, 117, 117, 0.5), inset -8px -8px 16px 0px rgba(119, 117, 117, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 1); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(141, 139, 139, 0.5), inset -8px -8px 16px 0px rgba(141, 139, 139, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
   &::before{
     position: absolute;
     content: '';
